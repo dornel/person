@@ -15,7 +15,7 @@ public class Person implements Serializable {
     @Column(name = "first_name", nullable = false, length = 80)
     private String firstName;
 
-    @Column(name = "last_name" , nullable = false, length = 80)
+    @Column(name = "last_name", nullable = false, length = 80)
     private String lastName;
 
     @Column(nullable = false, length = 100)
@@ -50,7 +50,6 @@ public class Person implements Serializable {
     }
 
 
-
     public String getGender() {
         return gender;
     }
@@ -61,5 +60,9 @@ public class Person implements Serializable {
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(long l) {
+
     }
 }
